@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Lora";
+  src: url("fonts/Lora-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', serif;
+}
+p, ul {
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 0 20px;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+pre {
+  margin: 30px 0;
+}
+
+.header {
+  height: calc(100px);
+  /* background-image: url('../img/header_photo.jpg'); */
+  background-size: cover;
+  background-color: #598080;
+  background-position-y: 90%;
+  background-position-x: 50%;
+}
+.header-post {
+  height: 100px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#83c3a5+0,72c2c1+100 */
+  background: #83c3a5; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #83c3a5 0%, #72c2c1 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#83c3a5), color-stop(100%,#72c2c1)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #83c3a5 0%,#72c2c1 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #83c3a5 0%,#72c2c1 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #83c3a5 0%,#72c2c1 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #83c3a5 0%,#72c2c1 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83c3a5', endColorstr='#72c2c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-size: cover;
+  text-transform: uppercase;
+}
+.avatar {
+  background-image: url('../img/self.png');
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  border: 2px solid white;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+          box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+}
+.centered {
+  text-align: center;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+}
+@media (min-width: 615px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #f1f3f5;
+  color: #495057;
+  padding: 12px;
+  min-width: 80px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.nav-item:hover, .nav-item:active {
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  margin-top: -2px;
+}
+
+.name-title {
+  color: #444;
+}
+a.name-title {
+  display: inline;
+  text-decoration: none;
+  color: #444;
+}
+a.name-title:hover {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+.name-subtitle {
+  color: #999;
+  font-size: 18px;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.post-title {
+  color: #666;
+  font-family: 'Roboto Condensed';
+  margin: 40px 0 0;
+  text-transform: uppercase;
+}
+.post-date {
+  color: #999;
+  font-family: 'Source Sans Pro';
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+.verify-in-keybase {
+  color: #999;
+  font-variant: small-caps;
+  font-size: small;
+}
+.verify-in-keybase a {
+  color: #999;
+}
+
+.big-tweet-header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.big-tweet-name-part {
+    margin-left: 20px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 80px;
+
+}
+
+.big-tweet-name {
+    margin: 0;
+    display: block;
+}
+
+.big-tweet-handle, .big-tweet-date {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+}
+.big-tweet-handle a {
+    color: #888;
+}
+.big-tweet-date {
+    margin-left: 10px;
+}
+
+.big-tweet-avatar {
+    background-image: url('../img/andre.jpg');
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.big-tweet-body p {
+    font-size: 1.4rem;
+}
+.big-tweet-body pre {
+    font-size: 1.6rem;
+}
+
+.big-tweet-body table {
+  width: 100%;
+  margin: 40px 0;
+  font-size: 2.1rem;
+}
+
+.big-tweet-body th {
+  border-bottom: 1px solid #333;
+}
+
+.syllables {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+  margin-right: 15px;
+}
+h2.hr {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  line-height: 0;
+  margin: 60px 0 30px;
+  font-size: 16px;
+  cursor: default;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+span.hr {
+  background-color: white;
+  padding: 0 10px;
+  font-family: 'Roboto Condensed';
+  color: #999;
+}
+ul.horizontal {
+  width: 100%;
+  max-width: 352px;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+ul.horizontal li {
+  display: inline-block;
+  text-align: center;
+}
+ul.horizontal li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 39px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+blockquote {
+  display: block;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-top: 21px;
+  padding-bottom: 1px;
+  margin: 1.5em 0;
+  border-left: 4px solid #DDD;
+  background-color: #EEE;
+  color: #333;
+}
+ul.horizontal li a:hover, ul.horizontal li a:active {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  margin-top: -2px;
+}
+.twitter-bg {
+  background-color: #33CCFF;
+}
+
+.linkedin-bg {
+  background-color: #0E76A8;
+}
+
+.github-bg {
+  background-color: #171515;
+}
+.email-bg {
+  background-color: #888;
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: #EEE;
+  text-align: center;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  padding: 30px 0;
+  color: #888;
+}
+.footer a {
+  color: #888;
+}
+.footer p {
+  font-size: 14px;
+  text-align: center;
+}
+span.dot {
+  margin: 0 5px;
+}
