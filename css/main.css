@@ -91,7 +91,13 @@ pre {
   height: calc(100px);
   /* background-image: url('../img/header_photo.jpg'); */
   background-size: cover;
-  background-color: #598080;
+  background-color: #598059;
+  /* #598080
+  #598059
+  #805980
+  #805959
+   */
+
   background-position-y: 90%;
   background-position-x: 50%;
 }
